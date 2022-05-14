@@ -1,11 +1,25 @@
 import React from 'react';
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 import './App.css';
 
 function App() {
   return (
-    <main>
-      React⚛️ + Vite⚡ + Replit🌀
-    </main>
+    <Router>
+      <main>
+        <Switch>
+          <Route path="/">
+            <HomePage />
+          </Route>
+        </Switch>
+      </main>
+    </Router>
   );
 }
 
